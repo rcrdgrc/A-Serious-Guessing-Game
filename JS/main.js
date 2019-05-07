@@ -1,17 +1,31 @@
 
+/*----- constants -----*/ 
+const words = ["ham", "jet", "amber"];
+const wordArray = [];
+const wordUArray = [];
+/*----- app's state (variables) -----*/ 
+let lives = 4;
+let numInWordBank = words.length;
 
+let word = "test";
+let wordU = "";
 
-var audio = new Audio(); // define your audio
+/*----- cached element references -----*/ 
+/*----- event listeners -----*/ 
+/*----- functions -----*/
 
-btn.click( () => audio.play('212579__pepv__evil-laugh.mp3') ); // that will do the trick !!
+let pullWord = function() {
+    word = words[(Math.floor(Math.random()*numInWordBank))];
+}
 
-$("btn").click(
-    function() {
-        console.log("clicked...waiting...");
-
-        setTimeout(
-            function() {
-                alert("Called after delay.");
-            },
-            5000);
-    });
+let SetUndeline = function() {
+    pullWord();
+    for(i=0; i<word.length; i++) {
+        wordArray[i] = word.charAt(i);
+        wordUArray[i] = "_";
+    }
+    wordU = wordUArray.join("");
+    document.getElementById("WORD").innerHTML = wordU;
+    document.getElementById("numLetters").innerHTML = word.length;
+}
+SetUndeline();

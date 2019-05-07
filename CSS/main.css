@@ -9,7 +9,7 @@
 
 /* Other styles */
 body {
-  background: #000;
+  background: black;
   color: #FFF;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,16 @@ body {
   cursor: pointer;
 }
 
+h1 {
+    justify-content: center;
+    color: #3a0505;
+    position: absolute;
+    top: 10%;
+}
+
+
+
+/* index.html */
 .box-with-text {
   position: absolute;
   top: 35%;
@@ -114,3 +124,6 @@ a:hover
 {
     color: rgb(221, 211, 211);
 }
+/* ------------------------------------------ */
+
+

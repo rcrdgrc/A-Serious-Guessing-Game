@@ -14,6 +14,13 @@ can miss 5 times.
 -Convert phrasses to blanks
 -26 button for Alphabet/ or keyboard input
 
+Action:
+-initialize game, 
+-display empty spaces in grey where letters go 
+-when player chooses a letter
+  -the letter turns different color on board
+  -if the letter matches the grey areas display the letter
+  
 
 /*----- constants -----*/ 
 Blanks, empty spaces  
