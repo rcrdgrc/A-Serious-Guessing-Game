@@ -25,10 +25,13 @@ h1 {
 
 #letters a{ 
     color: black;
-    padding: 2px;
+    padding: 4px;
     cursor: pointer;
     border-radius: 3px;
     background-color: darkgray;
+    color: #270202;
+    text-decoration: underline 
+   
 }
 
 .button-clicked {

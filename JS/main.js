@@ -10,7 +10,8 @@ let word = "test";
 let wordU = "";
 let used = [];
 /*----- cached element references -----*/ 
-let scary = '<iframe width="460" height="315" src="video/videoplayback.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+let scary1 = '<iframe width="460" height="315" src="https://i.imgur.com/34aATp9.jpg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+let scary2 = '<iframe width="460" height="315" src="https://i.imgur.com/xyRggKP.png" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 /*----- event listeners -----*/ 
 document.getElementById('letters')
   .addEventListener('click', handleClick)
@@ -61,12 +62,12 @@ function winning() {
     console.log(word2);
     
     if(word1 === word2) {
-        alert("You Won!");
-        window.location.reload();
+        document.getElementById("video").innerHTML = scary2;
+        // window.location.reload();
     }
    
     else if(lives === 0) {
-      let vid = document.getElementById("video").innerHTML = scary;
+      document.getElementById("video").innerHTML = scary1;
         }
     }
 
