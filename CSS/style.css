@@ -3,8 +3,8 @@
 
 .box-with-text {
   background-image: -webkit-linear-gradient(transparent, transparent), url(https://i.imgur.com/Zb0qXkS.jpg);
-  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Other styles */
