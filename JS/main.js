@@ -20,11 +20,6 @@ let pullWord = function() {
     word = words[(Math.floor(Math.random()*numInWordBank))];
 }
 
-function handleClick(evt) {
-    const marker = evt.target.id;
-     upDateLetter(marker);
-}
-
 function setUnderline() {
     pullWord();
     for(i=0; i<word.length; i++) {
@@ -35,6 +30,12 @@ function setUnderline() {
     document.getElementById("WORD").innerHTML = wordU;
     document.getElementById("numLetters").innerHTML = word.length;
 }
+
+function handleClick(evt) {
+    const marker = evt.target.id;
+     upDateLetter(marker);
+}
+
 
 function upDateLetter(letter) {
     for(i = 0; i < word.length; i++) {
@@ -65,21 +66,11 @@ function winning() {
     }
    
     else if(lives === 0) {
-        document.getElementById("video").innerHTML = scary;
-        // alert("No more lives");
-        // window.location.reload();
+      let vid = document.getElementById("video").innerHTML = scary;
         }
     }
 
-// var button = document.querySelector('#letters');
 
-// button.onclick = function () {
-//  var red = Math.floor(Math.random() * 256);
-//  var blue = Math.floor(Math.random() * 256);
-//  var green = Math.floor(Math.random() * 256);
-
-//  this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
-// };
 
 pullWord();
 setUnderline();
