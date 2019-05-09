@@ -14,7 +14,8 @@ h1 {
     line-height: 5;
 }
 #container {
-    width: 50%;
+    width: 80%;
+    height: 20%;
     border-radius: 5px;
     padding: 10px;
     background: black;
@@ -23,25 +24,59 @@ h1 {
     font-size: 24px;
 }
 
+
 #letters a{ 
     color: black;
-    padding: 4px;
-    cursor: pointer;
-    border-radius: 3px;
+    padding: 0 8px 0;
+    margin: 8% auto;
+    border-radius: 9px;
     background-color: darkgray;
     color: #270202;
-    text-decoration: underline 
-   
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    line-height: 1;
 }
 
-.button-clicked {
-    background: red;
-  }
 
 #letters a:hover{
     color: white;
+    background-color:#270202;
 }
-#letters a .d{
-    color: #270202;
-    text-decoration: underline;
+
+#letters a:visited{
+    background: yellowgreen;
+}
+#letters a:focus{
+    background: yellowgreen;
+}
+
+
+
+#reset {
+    color: #312828;
+    background-color: black;
+    border-color: black;
+    font-size: 40px;
+    padding: 9px;
+    cursor: pointer;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#reset2 {
+    color: #312828;
+    background-color: black;
+    border-color: black;
+    font-size: 40px;
+    padding: 9px;
+    cursor: pointer;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+#reset:hover{
+    color: white;
+}
+
+#reset2:hover{
+    color: white;
 }
