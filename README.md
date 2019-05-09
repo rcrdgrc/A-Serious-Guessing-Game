@@ -9,8 +9,7 @@ if not something serious happens. The player
 can miss 5 times.  
 
 -It is one player
--Category
--Phrases
+-Scary Phrases
 -Convert phrasses to blanks
 -26 button for Alphabet/ or keyboard input
 
@@ -20,7 +19,9 @@ Action:
 -when player chooses a letter
   -the letter turns different color on board
   -if the letter matches the grey areas display the letter
-  
+  -sound for every button
+  -scary sound in the background
+  -scary sound win or loss
 
 /*----- constants -----*/ 
 Blanks, empty spaces  

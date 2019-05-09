@@ -3,6 +3,7 @@
 const words = ["chainsaw", "dangerous", "demonic", "evil"];
 const wordUArray = [];
 const scarysound = new Audio("assets/sounds/132106__sironboy__woman-scream.wav")
+const slashSound = new Audio("assets/sounds/35213__abyssmal__slashkut.wav")
 /*----- app's state (variables) -----*/ 
 let wordArray = [];
 let lives = 5;
@@ -55,6 +56,7 @@ function setUnderline() {
 function handleClick(evt) {
     const marker = evt.target.id;
      upDateLetter(marker);
+     slashSound.play();
 }
 
 function upDateLetter(letter) {

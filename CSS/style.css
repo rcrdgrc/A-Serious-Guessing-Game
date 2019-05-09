@@ -1,6 +1,7 @@
 /* Main styles */
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
 
+
 .box-with-text {
   background-image: -webkit-linear-gradient(transparent, transparent), url(https://i.imgur.com/Zb0qXkS.jpg);
   -webkit-background-clip: text;
@@ -125,3 +126,4 @@ a:hover
 /* ------------------------------------------ */
 
 
+@media only screen and (max-width: 768px) {}
